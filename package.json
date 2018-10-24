@@ -1,6 +1,6 @@
 {
   "name": "todall-wui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Web User Interface (WUI) for TodAll.",
   "main": "index.js",
   "scripts": {
