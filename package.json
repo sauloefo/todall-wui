@@ -1,0 +1,32 @@
+{
+  "name": "todall-wui",
+  "version": "0.0.0",
+  "description": "Web User Interface (WUI) for TodAll.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sauloefo@github.com/sauloefo/todall-wui.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "typescript",
+    "parcel"
+  ],
+  "author": "@sauloefo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sauloefo/todall-wui/issues"
+  },
+  "homepage": "https://github.com/sauloefo/todall-wui#readme",
+  "dependencies": {
+    "@types/express": "4.16.0",
+    "express": "4.16.4",
+    "pkginfo": "0.4.1"
+  }
+}
