@@ -3,10 +3,13 @@
     "target": "es5",
     "module": "commonjs",
     "lib": [
+      "dom",
       "esnext"
     ],
-    "outDir": "dist",
-    "rootDir": "src",
+    "jsx": "react",
+
+    "outDir": "../dist/public",
+    "rootDir": "./",
 
     "strict": true,
     "noImplicitAny": true,
