@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx tsc --project server/tsconfig.json && npx parcel build site/index.html --out-dir dist/public",
     "start": "node dist/index.js",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
