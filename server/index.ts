@@ -3,6 +3,7 @@ const { version } = module.exports;
 console.log(`Initializing TodALL Web Application version ${version}...`);
 
 import express from 'express';
+import path from 'path';
 
 const httpPort = process.env.PORT || 3000;
 const hostname = process.env.HOSTNAME || 'localhost';
@@ -10,9 +11,10 @@ const hostname = process.env.HOSTNAME || 'localhost';
 const entryURL = `http://${hostname}:${httpPort}/`;
 
 const app = express()
-  .get('/', (req, res) => {
-    res.send('hello world.');
-  })
+  .use('/', express.static(path.join(__dirname, '/public')))
+  // .get('/', (req, res) => {
+  //   res.send('hello world.');
+  // })
   .listen(httpPort)
   .on('listening', () => console.log(`TodALL Web Application (version ${version}) running on ${entryURL}.`))
   .on('error', error => console.error(
